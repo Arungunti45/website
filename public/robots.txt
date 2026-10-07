@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aioin.com/sitemap.xml

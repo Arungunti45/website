@@ -1,0 +1,119 @@
+.footer {
+  background: #070F1E;
+  color: #94A3B8;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid #1E293B;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .footer {
+  background: #040810;
+  border-top-color: #111D2E;
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.2fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-brand-logo {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.footer-brand-desc {
+  color: #94A3B8;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.footer-column-title {
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-link {
+  color: #94A3B8;
+  font-size: 0.92rem;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-link:hover {
+  color: #60A5FA;
+  transform: translateX(3px);
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.social-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: #0F172A;
+  border: 1px solid #1E293B;
+  color: #94A3B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.social-icon-btn:hover {
+  background: var(--secondary);
+  color: #FFFFFF;
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid #1E293B;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.88rem;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-legal-links a:hover {
+  color: #60A5FA;
+}
