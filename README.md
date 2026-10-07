@@ -16,7 +16,7 @@ AIOIN is a modern, high-performance, production-quality corporate website for an
   - `Technologies (/technologies)` — Complete tech stack categories & third-party connector ecosystem.
   - `Industries (/industries)` — 11 vertical domain application breakdowns.
   - `Portfolio (/portfolio)` — Interactive filterable portfolio (All, Web, Mobile, AI, FinTech, Enterprise).
-  - `Case Studies (/portfolio/:slug)` — 5 dynamic architectural deep dives (Limovi, MoneyMantra, Get Your Job, Smart College Canteen, Company Management System).
+  - `Case Studies (/portfolio/:slug)` — 4 dynamic architectural deep dives (BreakZoo, Get Your Job, Smart College Canteen, Company Management System).
   - `Careers (/careers)` — 8 engineering job openings with interactive application modal & localStorage persistence.
   - `Contact (/contact)` — Full project proposal request form with validation, service & budget selectors, and localStorage service.
   - `Privacy (/privacy)` — Formatted legal data protection policies.

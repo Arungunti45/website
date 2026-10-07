@@ -37,7 +37,7 @@ export function Portfolio() {
               Engineering That Drives <span className="text-gradient">Measurable Impact</span>
             </h1>
             <p className="hero-description" style={{ margin: '0 auto 2.5rem auto', fontSize: '1.15rem' }}>
-              Explore deep architectural case studies of digital platforms engineered by AIOIN for financial institutions, wellness apps, labor networks, universities, and enterprises.
+              Explore deep architectural case studies of digital platforms engineered by AIOIN for food delivery networks, labor ecosystems, universities, and enterprises.
             </p>
 
             {/* Filter Buttons */}

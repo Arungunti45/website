@@ -69,9 +69,8 @@ export function Hero() {
               <div className="orbit-ring orbit-2" />
 
               {/* Core AI Sphere */}
-              <div className="tech-core-sphere">
-                <span className="tech-core-text">AIOIN</span>
-                <span className="tech-core-sub">AI & CLOUD CORE</span>
+              <div className="tech-core-sphere" style={{ overflow: 'hidden', padding: 0, border: '2px solid rgba(255,255,255,0.1)' }}>
+                <img src="/icon.jpeg" alt="AIOIN Core Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
 
               {/* Floating Technology Feature Cards */}

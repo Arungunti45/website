@@ -6,6 +6,7 @@ export const services = [
     shortDesc: 'Modern, high-performance web applications built with cutting-edge frontends and robust backends.',
     fullDesc: 'We engineer responsive, secure, and lightning-fast web applications tailored to your specific business workflows. From SaaS platforms to customer portals, our full-stack engineering delivers clean architecture and scalable code.',
     iconName: 'Globe',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600',
     technologies: ['React', 'Next.js', 'JavaScript', 'Python', 'Django', 'Node.js'],
     benefits: [
       'High-speed page rendering and optimal Core Web Vitals',
@@ -22,6 +23,7 @@ export const services = [
     shortDesc: 'Native-feel iOS and Android applications with intuitive user flows and real-time capabilities.',
     fullDesc: 'We craft frictionless mobile experiences utilizing React Native and modern mobile frameworks. Our apps offer fluid animations, offline caching, push messaging, and seamless device hardware integration.',
     iconName: 'Smartphone',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=600',
     technologies: ['React Native', 'Android', 'iOS', 'Expo', 'Redux', 'SQLite'],
     benefits: [
       'Single codebase reducing development time and cost by 40%',
@@ -38,6 +40,7 @@ export const services = [
     shortDesc: 'Intelligent AI-driven workflows, smart conversational assistants, and predictive machine learning models.',
     fullDesc: 'Empower your enterprise with practical Artificial Intelligence. We integrate Large Language Models, custom NLP pipelines, robotic process automation (RPA), and predictive analytics to automate repetitive business tasks.',
     iconName: 'Bot',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600',
     technologies: ['Python', 'Machine Learning', 'AI APIs', 'LLMs', 'Automation', 'FastAPI'],
     benefits: [
       'Dramatic reduction in human operational overhead and error rates',
@@ -54,6 +57,7 @@ export const services = [
     shortDesc: 'Bespoke enterprise software platforms designed around your unique operational ecosystem.',
     fullDesc: 'Off-the-shelf software often forces you to compromise your business logic. We design and build tailor-made enterprise software that scales alongside your company growth, ensuring total ownership and complete flexibility.',
     iconName: 'Code',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600',
     technologies: ['React', 'Python', 'Django', 'PostgreSQL', 'Docker', 'Redis'],
     benefits: [
       '100% customized workflows matching your company operating model',
@@ -70,6 +74,7 @@ export const services = [
     shortDesc: 'User-centric interfaces combining visual elegance, accessibility, and conversion-focused interaction design.',
     fullDesc: 'We turn complex workflows into delightful, effortless digital interfaces. Our design system approach ensures consistency, accessibility, and emotional resonance across every customer touchpoint.',
     iconName: 'Palette',
+    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600',
     technologies: ['Figma', 'Design Systems', 'Wireframing', 'Prototyping', 'Accessibility (a11y)'],
     benefits: [
       'Elevated brand perception and high user retention',
@@ -86,6 +91,7 @@ export const services = [
     shortDesc: 'Automated CI/CD pipelines, containerized deployments, and resilient cloud infrastructure.',
     fullDesc: 'We design and maintain cloud environments that maximize uptime and control infrastructure costs. Utilizing Docker, Kubernetes, Terraform, and cloud best practices on AWS and Azure, we ensure continuous high availability.',
     iconName: 'Cloud',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=600',
     technologies: ['AWS', 'Azure', 'Docker', 'CI/CD', 'GitHub Actions', 'Terraform'],
     benefits: [
       'High-availability infrastructure with automated disaster recovery',
@@ -102,6 +108,7 @@ export const services = [
     shortDesc: 'Ultra-fast RESTful and GraphQL backend architectures engineered for high-concurrency demands.',
     fullDesc: 'Behind every great application is a resilient backend. We develop scalable APIs and data processing backends capable of managing millions of daily requests with microsecond database query responses.',
     iconName: 'Server',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600',
     technologies: ['Django', 'Node.js', 'Express', 'PostgreSQL', 'Redis', 'GraphQL'],
     benefits: [
       'Clean OpenAPI/Swagger documentation for effortless partner integration',
@@ -118,6 +125,7 @@ export const services = [
     shortDesc: 'Proactive monitoring, security patching, feature enhancement, and 24/7 SLA-backed support.',
     fullDesc: 'Digital products require continuous care to stay secure, fast, and aligned with market changes. Our dedicated maintenance teams monitor uptime, patch security vulnerabilities, and roll out continuous improvements.',
     iconName: 'ShieldCheck',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600',
     technologies: ['Sentry', 'Datadog', 'Uptime Monitoring', 'Security Audits', 'Performance Optimization'],
     benefits: [
       'Guaranteed rapid response SLA for high-priority incidents',

@@ -293,7 +293,7 @@ export function Home() {
           <SectionHeading
             badge="Selected Works"
             title="Featured Case Studies"
-            subtitle="Explore how AIOIN built custom fintech, wellness, recruitment, and AI systems."
+            subtitle="Explore how AIOIN built on-demand food delivery platforms, labor networks, and campus AI systems."
           />
 
           {/* Filter Tabs */}

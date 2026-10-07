@@ -91,6 +91,12 @@
     grid-template-columns: 1fr;
   }
 
+  .cards-grid-2,
+  .cards-grid-3,
+  .cards-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
   .form-wrapper,
   .contact-card-info {
     padding: 1.5rem;

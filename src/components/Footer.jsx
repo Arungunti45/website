@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { scrollToTop } from '../utils/helpers';
 
 function GithubIcon({ size = 18 }) {
@@ -37,22 +37,22 @@ export function Footer() {
         <div className="footer-top-grid">
           {/* Brand Column */}
           <div className="footer-brand-column">
-            <Link to="/" className="footer-brand-logo" onClick={scrollToTop}>
-              <div className="logo-icon">
-                <Sparkles size={20} />
+            <Link to="/" className="footer-brand-logo" onClick={scrollToTop} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              <img src="/icon.jpeg" alt="AIOIN Logo" style={{ height: '60px', width: '60px', objectFit: 'cover', borderRadius: '50%' }} />
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-0.02em', lineHeight: 1 }}>AIOIN</span>
+                <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary)', letterSpacing: '0.05em', marginTop: '4px' }}>ALL IN ONE. INDIA</span>
               </div>
-              <span>
-                AIO<span className="logo-text-accent">IN</span>
-              </span>
             </Link>
-            <p className="footer-brand-desc">
-              Building Intelligent Digital Solutions for a Smarter Future. We engineer high-performance web, mobile, AI, and enterprise applications for visionary organizations.
+            <p className="footer-brand-desc" style={{ marginTop: '1.25rem' }}>
+              <strong style={{ color: '#ffffff', letterSpacing: '0.04em' }}>GROUNDWORK FOR WHAT'S NEXT.</strong><br/>
+              AIOIN Technologies & Innovations. Engineering ground-tested digital operating systems for Indian educational institutions, student hostels, and civic communities.
             </p>
             <div className="footer-social-links">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="LinkedIn">
                 <LinkedinIcon size={18} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="GitHub">
+              <a href="https://github.com/777tharun7" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="GitHub">
                 <GithubIcon size={18} />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="Twitter">
@@ -61,92 +61,65 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Company Column */}
+          {/* Portfolio Column */}
           <div>
-            <h4 className="footer-column-title">Company</h4>
+            <h4 className="footer-column-title">Portfolio</h4>
             <ul className="footer-links-list">
               <li>
-                <Link to="/about" className="footer-link" onClick={scrollToTop}>
-                  About AIOIN
+                <Link to="/portfolio" className="footer-link" onClick={scrollToTop}>
+                  Vikas ERP (Telangana)
                 </Link>
               </li>
               <li>
                 <Link to="/portfolio" className="footer-link" onClick={scrollToTop}>
-                  Case Studies
+                  HostelMate Meal AI
                 </Link>
               </li>
               <li>
-                <Link to="/careers" className="footer-link" onClick={scrollToTop}>
-                  Careers
+                <Link to="/portfolio" className="footer-link" onClick={scrollToTop}>
+                  BREKZO Canteen OS
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="footer-link" onClick={scrollToTop}>
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Services Column */}
-          <div>
-            <h4 className="footer-column-title">Services</h4>
-            <ul className="footer-links-list">
-              <li>
-                <Link to="/services" className="footer-link" onClick={scrollToTop}>
-                  Web Development
+                <Link to="/portfolio" className="footer-link" onClick={scrollToTop}>
+                  3D CAMPUS Digital Twin
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="footer-link" onClick={scrollToTop}>
-                  Mobile Apps
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="footer-link" onClick={scrollToTop}>
-                  AI & Automation
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="footer-link" onClick={scrollToTop}>
-                  Cloud & DevOps
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="footer-link" onClick={scrollToTop}>
-                  UI/UX Design
+                <Link to="/portfolio" className="footer-link" onClick={scrollToTop}>
+                  Ashok Pickles E-Commerce
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Solutions Column */}
+          {/* Methodology Column */}
           <div>
-            <h4 className="footer-column-title">Solutions</h4>
+            <h4 className="footer-column-title">Methodology</h4>
             <ul className="footer-links-list">
               <li>
-                <Link to="/solutions" className="footer-link" onClick={scrollToTop}>
-                  FinTech & Banking
+                <Link to="/about" className="footer-link" onClick={scrollToTop}>
+                  Ground Work First
                 </Link>
               </li>
               <li>
-                <Link to="/solutions" className="footer-link" onClick={scrollToTop}>
-                  Digital Gold & Wealth
+                <Link to="/about" className="footer-link" onClick={scrollToTop}>
+                  Ethnographic Immersion
                 </Link>
               </li>
               <li>
-                <Link to="/solutions" className="footer-link" onClick={scrollToTop}>
-                  E-Commerce Systems
+                <Link to="/about" className="footer-link" onClick={scrollToTop}>
+                  India Impact Priorities
                 </Link>
               </li>
               <li>
-                <Link to="/solutions" className="footer-link" onClick={scrollToTop}>
-                  Smart Campus & AI
-                </Link>
+                <a href="https://github.com/777tharun7" target="_blank" rel="noopener noreferrer" className="footer-link">
+                  Public Git Repositories
+                </a>
               </li>
               <li>
-                <Link to="/solutions" className="footer-link" onClick={scrollToTop}>
-                  Enterprise ERP
+                <Link to="/services" className="footer-link" onClick={scrollToTop}>
+                  Field Deployments
                 </Link>
               </li>
             </ul>
@@ -158,15 +131,15 @@ export function Footer() {
             <ul className="footer-links-list">
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', color: '#94A3B8', fontSize: '0.9rem' }}>
                 <Mail size={16} style={{ marginTop: '3px', color: '#60A5FA', flexShrink: 0 }} />
-                <span>contact@aioin.com</span>
+                <a href="mailto:aioin4747@gmail.com" className="footer-link" style={{ padding: 0 }}>aioin4747@gmail.com</a>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', color: '#94A3B8', fontSize: '0.9rem' }}>
                 <Phone size={16} style={{ marginTop: '3px', color: '#60A5FA', flexShrink: 0 }} />
-                <span>+1 (800) 555-AIOIN</span>
+                <a href="tel:8019894419" className="footer-link" style={{ padding: 0 }}>8019894419</a>
               </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', color: '#94A3B8', fontSize: '0.9rem' }}>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', color: '#94A3B8', fontSize: '0.9rem', marginTop: '1rem' }}>
                 <MapPin size={16} style={{ marginTop: '3px', color: '#60A5FA', flexShrink: 0 }} />
-                <span>Global Tech Delivery Centers</span>
+                <span>Ground Research HQ<br/>Active Field Deployments in Telangana & NCR</span>
               </li>
             </ul>
           </div>
@@ -175,18 +148,10 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <div>
-            © {new Date().getFullYear()} AIOIN. All rights reserved.
+            © {new Date().getFullYear()} AIOIN Technologies & Innovations. Built with rigorous ground research for Bharat.
           </div>
-          <div className="footer-legal-links">
-            <Link to="/privacy" onClick={scrollToTop}>
-              Privacy Policy
-            </Link>
-            <Link to="/terms" onClick={scrollToTop}>
-              Terms of Service
-            </Link>
-            <Link to="/sitemap.xml" target="_blank">
-              Sitemap
-            </Link>
+          <div className="footer-legal-links" style={{ fontFamily: 'var(--font-mono)', color: 'var(--primary)', fontSize: '0.75rem', fontWeight: 600 }}>
+            AIOIN GATEWAY v1.0 • ZERO COMPROMISE ON GROUND REALITY
           </div>
         </div>
       </div>

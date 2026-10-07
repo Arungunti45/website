@@ -9,11 +9,11 @@ import {
   Cloud,
   Server,
   ShieldCheck,
-  CheckCircle2,
+  ShoppingCart,
+  Star,
   ArrowRight,
   Sparkles,
 } from 'lucide-react';
-import { SectionHeading } from '../components/SectionHeading';
 import { CTASection } from '../components/CTASection';
 import { Button } from '../components/Button';
 import { services } from '../data/services';
@@ -45,152 +45,138 @@ export function Services() {
           <div style={{ maxWidth: 850, margin: '0 auto', textAlign: 'center' }}>
             <div className="badge" style={{ marginBottom: '1rem' }}>
               <Sparkles size={15} />
-              <span>Full-Stack Engineering</span>
+              <span>Premium Services Catalog</span>
             </div>
             <h1 className="hero-title" style={{ marginBottom: '1.25rem' }}>
-              Specialized Services for <span className="text-gradient">Modern Digital Products</span>
+              Explore Our <span className="text-gradient">Digital Products</span>
             </h1>
             <p className="hero-description" style={{ margin: '0 auto 2rem auto', fontSize: '1.15rem' }}>
-              From initial architectural blueprints to high-load production environments, we provide end-to-end engineering excellence across the entire software development lifecycle.
+              Browse our handcrafted, high-quality engineering services structured just like a product catalog. Find the perfect solution for your business needs and add it to your project.
             </p>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-              <Button to="/contact" variant="primary" size="lg" icon={ArrowRight}>
-                Start a Project
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Detailed Services List */}
+      {/* Product Catalog Grid */}
       <section className="section section-bg-subtle">
         <div className="container">
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
+          
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+            gap: '2.5rem',
+            marginBottom: '4rem'
+          }}>
             {services.map((srv, idx) => {
               const Icon = iconMap[srv.iconName] || Globe;
-              const isEven = idx % 2 === 0;
-
+              
               return (
                 <motion.div
                   key={srv.id}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-60px' }}
-                  transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                  id={srv.id}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ duration: 0.4, delay: idx * 0.05 }}
+                  className="product-card"
                   style={{
                     background: 'var(--surface-card)',
                     border: '1px solid var(--border)',
-                    borderRadius: 'var(--radius-xl)',
-                    padding: '3rem',
-                    boxShadow: 'var(--shadow-md)',
+                    borderRadius: 'var(--radius-lg)',
+                    overflow: 'hidden',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    boxShadow: 'var(--shadow-sm)',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    cursor: 'pointer'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-5px)';
+                    e.currentTarget.style.boxShadow = 'var(--shadow-md)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
                   }}
                 >
-                  <div className="two-col-grid" style={{ alignItems: 'flex-start' }}>
-                    {/* Left: Info */}
-                    <div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>
-                        <div
-                          style={{
-                            width: 56,
-                            height: 56,
-                            borderRadius: 'var(--radius-md)',
-                            background: 'var(--grad-badge)',
-                            color: 'var(--secondary)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                          }}
-                        >
-                          <Icon size={28} />
-                        </div>
-                        <div>
-                          <span style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--muted)', fontFamily: 'var(--font-heading)' }}>
-                            SERVICE #{srv.num}
-                          </span>
-                          <h2 style={{ fontSize: '1.75rem', lineHeight: 1.2 }}>{srv.title}</h2>
-                        </div>
-                      </div>
+                  {/* Product Image */}
+                  <div style={{
+                    height: '220px',
+                    backgroundImage: `url(${srv.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    position: 'relative',
+                    borderBottom: '1px solid var(--border)'
+                  }}>
+                    <div style={{
+                      position: 'absolute',
+                      top: '1rem',
+                      right: '1rem',
+                      background: 'rgba(0, 0, 0, 0.5)',
+                      padding: '4px 10px',
+                      borderRadius: '20px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      fontSize: '0.8rem',
+                      color: '#FFD700'
+                    }}>
+                      <Star size={12} fill="#FFD700" />
+                      <span>5.0</span>
+                    </div>
+                    {/* Add a subtle dark overlay for better icon visibility */}
+                    <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.4)' }} />
+                    <Icon size={70} color="white" style={{ position: 'relative', zIndex: 2, dropShadow: '0 4px 10px rgba(0,0,0,0.5)' }} opacity={0.9} />
+                  </div>
 
-                      <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '1.75rem' }}>
-                        {srv.fullDesc}
-                      </p>
+                  {/* Product Details */}
+                  <div style={{ padding: '1.75rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--primary)', textTransform: 'uppercase', fontWeight: 700, marginBottom: '0.5rem' }}>
+                      Service • #{srv.num}
+                    </div>
+                    <h3 style={{ fontSize: '1.35rem', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+                      {srv.title}
+                    </h3>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', flex: 1, lineHeight: 1.6 }}>
+                      {srv.shortDesc}
+                    </p>
 
-                      <div style={{ marginBottom: '1.75rem' }}>
-                        <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', marginBottom: '0.6rem' }}>
-                          Key Business Benefits
-                        </div>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-                          {srv.benefits.map((b, bIdx) => (
-                            <div key={bIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', fontSize: '0.94rem', color: 'var(--text-secondary)' }}>
-                              <CheckCircle2 size={17} style={{ color: 'var(--secondary)', flexShrink: 0, marginTop: '3px' }} />
-                              <span>{b}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      <Button to="/contact" variant="primary" size="md" icon={ArrowRight}>
-                        Inquire About {srv.title}
-                      </Button>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1.5rem' }}>
+                      {srv.technologies.slice(0, 3).map((tech, i) => (
+                        <span key={i} style={{
+                          fontSize: '0.75rem',
+                          background: 'var(--surface)',
+                          border: '1px solid var(--border)',
+                          padding: '2px 8px',
+                          borderRadius: '12px',
+                          color: 'var(--text-muted)'
+                        }}>
+                          {tech}
+                        </span>
+                      ))}
+                      {srv.technologies.length > 3 && (
+                        <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', padding: '2px 4px' }}>+{srv.technologies.length - 3} more</span>
+                      )}
                     </div>
 
-                    {/* Right: Technologies & Process */}
-                    <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius-lg)', padding: '2rem' }}>
-                      <div style={{ marginBottom: '1.75rem' }}>
-                        <h3 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Core Technologies</h3>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                          {srv.technologies.map((t, tIdx) => (
-                            <span
-                              key={tIdx}
-                              style={{
-                                background: 'var(--surface-card)',
-                                border: '1px solid var(--border)',
-                                padding: '0.45rem 0.9rem',
-                                borderRadius: 'var(--radius-sm)',
-                                fontSize: '0.86rem',
-                                fontWeight: 600,
-                                color: 'var(--text-primary)',
-                              }}
-                            >
-                              {t}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto', paddingTop: '1rem', borderTop: '1px dashed var(--border)' }}>
                       <div>
-                        <h3 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Development Lifecycle</h3>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                          {srv.process.map((step, sIdx) => (
-                            <div
-                              key={sIdx}
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '0.75rem',
-                                padding: '0.6rem 0.85rem',
-                                background: 'var(--surface-card)',
-                                borderRadius: 'var(--radius-sm)',
-                                border: '1px solid var(--border)',
-                                fontSize: '0.88rem',
-                                color: 'var(--text-secondary)',
-                              }}
-                            >
-                              <span style={{ fontWeight: 800, color: 'var(--secondary)', fontFamily: 'var(--font-heading)' }}>
-                                0{sIdx + 1}
-                              </span>
-                              <span>{step}</span>
-                            </div>
-                          ))}
-                        </div>
+                        <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', display: 'block' }}>Starting at</span>
+                        <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-primary)' }}>Custom Quote</span>
                       </div>
+                      
+                      <Button to={`/contact?service=${srv.id}`} variant="primary" size="sm" icon={ShoppingCart}>
+                        Add to Project
+                      </Button>
                     </div>
                   </div>
                 </motion.div>
               );
             })}
           </div>
+
         </div>
       </section>
 

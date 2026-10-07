@@ -47,12 +47,7 @@ export function Navbar() {
         <div className="container navbar-container">
           {/* Brand Logo */}
           <Link to="/" className="brand-logo" aria-label="AIOIN Home">
-            <div className="logo-icon">
-              <Sparkles size={20} />
-            </div>
-            <span>
-              AIO<span className="logo-text-accent">IN</span>
-            </span>
+            <img src="/icon.jpeg" alt="AIOIN Logo" style={{ height: '48px', width: '48px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -131,12 +126,7 @@ export function Navbar() {
               <div>
                 <div className="mobile-drawer-header">
                   <Link to="/" className="brand-logo" onClick={() => setMobileMenuOpen(false)}>
-                    <div className="logo-icon">
-                      <Sparkles size={20} />
-                    </div>
-                    <span>
-                      AIO<span className="logo-text-accent">IN</span>
-                    </span>
+                    <img src="/icon.jpeg" alt="AIOIN Logo" style={{ height: '42px', width: '42px', objectFit: 'cover', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
                   </Link>
                   <button
                     onClick={() => setMobileMenuOpen(false)}

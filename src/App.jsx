@@ -1,10 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
-import { Toast } from './components/Toast';
-import { Loading } from './components/Loading';
-import { ErrorBoundary } from './components/ErrorBoundary';
+import { Navbar, Footer, Toast, Loading, ErrorBoundary, AIAssistant, WhatsAppButton } from './components';
 import { ThemeProvider } from './hooks/useTheme';
 import { ToastProvider } from './hooks/useToast';
 
@@ -23,17 +19,7 @@ const Privacy = lazy(() => import('./pages/Privacy').then(m => ({ default: m.Pri
 const Terms = lazy(() => import('./pages/Terms').then(m => ({ default: m.Terms })));
 const NotFound = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
-// Styles
-import './styles/variables.css';
-import './styles/globals.css';
-import './styles/navbar.css';
-import './styles/hero.css';
-import './styles/sections.css';
-import './styles/cards.css';
-import './styles/forms.css';
-import './styles/footer.css';
-import './styles/animations.css';
-import './styles/responsive.css';
+// Note: Styles are imported centrally in main.jsx -> index.css
 
 // ScrollToTop on Route Change
 function ScrollToTop() {
@@ -76,6 +62,7 @@ export function App() {
               </main>
               <Footer />
               <Toast />
+              <WhatsAppButton />
             </div>
           </Router>
         </ToastProvider>

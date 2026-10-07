@@ -1,118 +1,60 @@
 export const projects = [
   {
-    id: 'limovi',
-    slug: 'limovi',
-    title: 'Limovi',
-    category: 'FinTech',
-    filterCategory: 'FinTech',
-    badge: 'FinTech & WealthTech',
-    tagline: 'Enterprise Digital Gold & Wealth Management Ecosystem',
-    description: 'A compliant, high-security fintech platform empowering retail and institutional users to buy, sell, loan, gift, and SIP digital gold with instant vault liquidation.',
-    summary: 'Limovi delivers banking-grade financial technology with seamless KYC compliance, live metal rate feeds, automated recurring savings (SIP), and secure vault-backed custody.',
-    client: 'Limovi Bullion & Wealth Ltd',
-    timeline: '8 Months',
-    servicesProvided: ['Full-Stack Development', 'Mobile App Architecture', 'Fintech Security', 'DevOps & Cloud'],
-    heroImageColor: 'linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%)',
-    metrics: [
-      { label: 'Demo Project Metrics: Transactions/Sec', value: '10,000+' },
-      { label: 'Demo Project Metrics: KYC Speed', value: '< 2 Mins' },
-      { label: 'Demo Project Metrics: Vault Security Rating', value: 'Tier 4' },
-      { label: 'Demo Project Metrics: API Uptime SLA', value: '99.99%' },
-    ],
-    overview: 'Limovi was engineered to democratize access to precious metals and wealth management in emerging markets. The platform bridges traditional gold bullion vaults with digital micro-investments through an intuitive multi-platform experience.',
-    challenge: 'Building a real-time fintech system that synchronizes bullion market rates down to the millisecond while adhering to stringent anti-money laundering (AML) and know-your-customer (KYC) regulatory standards without introducing friction into the user checkout.',
-    solution: 'AIOIN developed a microservices-based backend using Django and PostgreSQL coupled with an ultra-responsive React Web and React Native mobile client. Real-time rate sync engines with Redis caching and automated KYC validation pipelines ensured bank-grade reliability.',
-    features: [
-      { title: 'Mobile OTP Authentication', desc: 'Passwordless, fraud-resistant SMS/WhatsApp OTP login with device fingerprinting.' },
-      { title: 'Automated Tiered KYC', desc: 'Instant government identity document verification and facial biometric matching.' },
-      { title: 'Live Digital Gold Trading', desc: 'Sub-second market price execution with zero slippage and 24/7 liquidity.' },
-      { title: 'Recurring Gold SIP', desc: 'Configurable automated daily, weekly, or monthly accumulation mandates.' },
-      { title: 'Vault Gold Loans', desc: 'Instant collateralized liquidity loans against accumulated digital gold holdings.' },
-      { title: 'Social Gold Gifting', desc: 'Instant peer-to-peer fractional gold gifting with customized greeting media.' },
-      { title: 'Physical Vault Delivery', desc: 'Doorstep tamper-proof delivery of certified minted gold coins and bullion bars.' },
-      { title: 'Instant Bank Withdrawals', desc: 'Real-time IMPS/NEFT fund settlements directly to verified bank accounts.' },
-      { title: 'Enterprise Admin Suite', desc: 'Deep liquidity management, treasury monitoring, and automated ledger balancing.' },
-      { title: 'Regulatory Compliance Engine', desc: 'Automated AML flagging, suspicious transaction detection, and tax reporting.' }
-    ],
-    userJourney: [
-      { step: '1', title: 'Swift Onboarding', desc: 'User completes phone OTP registration and frictionless digital KYC in under 2 minutes.' },
-      { step: '2', title: 'Fund & Purchase', desc: 'User links UPI or Net Banking and buys 24K 99.9% pure digital gold from ₹10 onwards.' },
-      { step: '3', title: 'SIP & Wealth Accumulation', desc: 'Automated recurring rules systematically grow bullion holdings over time.' },
-      { step: '4', title: 'Redeem or Deliver', desc: 'Instant liquidation back to cash or physical mint delivery at the user doorstep.' }
-    ],
-    technologies: ['React', 'React Native', 'Django', 'PostgreSQL', 'Redis', 'AWS', 'Docker', 'Augmont APIs'],
-    architecture: {
-      type: 'Event-Driven Microservices & Secure Ledger',
-      highlights: [
-        'Atomic transaction isolation to eliminate double-spend and ledger anomalies',
-        'Redis Pub/Sub real-time broadcast of live gold rates with sub-50ms latency',
-        'AES-256 encrypted vault storage credentials with AWS KMS hardware security modules',
-        'Automated CI/CD deployment on containerized AWS ECS clusters with auto-scaling'
-      ]
-    },
-    adminFeatures: [
-      'Treasury Liquidity Dashboard & Hedging Controls',
-      'Real-time AML & Fraud Anomaly Monitoring',
-      'Automated Bank Reconciliation & Settlement Loggers',
-      'Role-based Access Control (RBAC) with Dual-factor Admin Sign-offs'
-    ]
-  },
-  {
-    id: 'moneymantra',
-    slug: 'moneymantra',
-    title: 'MoneyMantra',
+    id: 'breakzoo',
+    slug: 'breakzoo',
+    title: 'BreakZoo',
     category: 'Mobile',
     filterCategory: 'Mobile',
-    badge: 'Mobile App & Wellness',
-    tagline: 'Mindfulness, Meditation & Guided Wellness Subscription Platform',
-    description: 'A holistic digital wellness ecosystem featuring scheduled live Zoom workshops, curated guided meditations, tiered subscriptions, and automated wellness routines.',
-    summary: 'MoneyMantra combines personalized mental fitness regimens, automated recurring billing, interactive group sessions, and real-time push nudges into a single habit-forming app.',
-    client: 'Mantra Mindful Technologies',
+    badge: 'FoodTech & Delivery',
+    tagline: 'On-Demand Food Delivery & Break-Time Pre-Ordering Ecosystem',
+    description: 'A high-speed food ordering and delivery ecosystem featuring live GPS driver tracking, cloud kitchen routing, group ordering, scheduled break meals, and one-tap checkout.',
+    summary: 'BreakZoo delivers an ultra-fast food ordering experience with real-time driver telemetry, automated kitchen display queues, scheduled break meal deliveries, and seamless instant payments.',
+    client: 'BreakZoo Technologies Pvt Ltd',
     timeline: '6 Months',
-    servicesProvided: ['React Native Mobile App', 'Backend Architecture', 'Payment Integration', 'Video Streaming'],
-    heroImageColor: 'linear-gradient(135deg, #065F46 0%, #047857 50%, #0D9488 100%)',
+    servicesProvided: ['React Native Mobile App', 'Web Admin & Kitchen POS', 'Real-Time Dispatch Engine', 'Payment & Geo-Tracking'],
+    heroImageColor: 'linear-gradient(135deg, #EA580C 0%, #E11D48 50%, #BE123C 100%)',
     metrics: [
-      { label: 'Demo Project Metrics: Active Sessions', value: '500K+' },
-      { label: 'Demo Project Metrics: User Retention', value: '68%' },
-      { label: 'Demo Project Metrics: Live Stream Quality', value: '1080p HD' },
-      { label: 'Demo Project Metrics: Subscription Conversion', value: '18.4%' },
+      { label: 'Demo Project Metrics: Avg Delivery Time', value: '< 22 Mins' },
+      { label: 'Demo Project Metrics: Daily Active Orders', value: '45,000+' },
+      { label: 'Demo Project Metrics: Restaurant Partners', value: '1,800+' },
+      { label: 'Demo Project Metrics: Live GPS Latency', value: '< 100ms' },
     ],
-    overview: 'MoneyMantra is crafted to assist individuals in achieving daily mental clarity, emotional equilibrium, and stress relief through evidence-based mindfulness routines and certified masterclasses.',
-    challenge: 'Delivering seamless high-definition video and audio streaming offline and online while managing complex international subscription recurring payment cycles and synchronized group video rooms.',
-    solution: 'AIOIN built a cross-platform React Native app with native audio pipeline optimizers, integrated Razorpay recurring subscription webhooks, and embedded Zoom SDK for interactive group sessions.',
+    overview: 'BreakZoo was engineered to redefine quick meal delivery, office break snacks, and campus dining. The platform eliminates long wait times during peak rush hours with intelligent kitchen batching, group cart sharing, and algorithmic driver dispatch.',
+    challenge: 'Managing massive concurrency spikes during lunch and dinner break hours, computing real-time driver routing with sub-second GPS updates, and synchronizing order lifecycle states across customer apps, kitchen display systems (KDS), and delivery partner fleets.',
+    solution: 'AIOIN engineered a robust full-stack solution featuring high-performance React Native iOS & Android apps, a real-time React web dashboard for restaurant partners and kitchen staff, and a high-concurrency Node.js & Go backend with WebSocket and Redis Pub/Sub live tracking.',
     features: [
-      { title: 'Personalized Onboarding & Goals', desc: 'Interactive assessment tailoring meditation tracks to individual stress levels.' },
-      { title: 'Tiered Subscription Engine', desc: 'Monthly, Annual, and VIP plans with seamless automated recurring renewals.' },
-      { title: 'Free Trial Management', desc: 'Automated trial-to-paid conversion funnel with smart drip notifications.' },
-      { title: 'Dynamic Invoicing & Receipts', desc: 'Instant downloadable PDF tax invoices and transparent billing records.' },
-      { title: 'Rich Audio/Video Library', desc: 'Offline audio caching, background audio playback, and sleep-timer controls.' },
-      { title: 'Live Zoom Masterclasses', desc: 'Embedded webinar player with live Q&A, chat, and host speaker spotlighting.' },
-      { title: 'Habit & Meditation Streaks', desc: 'Gamified calendar trackers and personalized daily achievement badges.' },
-      { title: 'Smart Push Reminders', desc: 'Context-aware notifications nudging users at optimal morning and evening hours.' },
-      { title: 'Omnichannel Messaging', desc: 'In-app community discussions and direct practitioner broadcast updates.' },
-      { title: 'Master Instructor Portal', desc: 'Web portal for wellness instructors to schedule live streams and track ratings.' }
+      { title: 'Hyperlocal Restaurant & Menu Discovery', desc: 'Instant search with dietary tags, dish customizations, calorie counters, and combo deals.' },
+      { title: 'Sub-Second Live GPS Driver Tracking', desc: 'Real-time interactive map showing delivery rider location with dynamic traffic ETAs.' },
+      { title: 'Break-Time Pre-Ordering & Scheduling', desc: 'Allows office workers and students to pre-schedule hot meals for specific break slots.' },
+      { title: 'Multi-Cart Group Ordering', desc: 'Collaborative shared links letting team members add dishes to a single combined checkout.' },
+      { title: 'Dynamic Kitchen Display System (KDS)', desc: 'Smart kitchen monitors showing preparation batches in real-time order priority.' },
+      { title: 'Algorithmic Rider Dispatch & Route Batching', desc: 'Geospatial AI matching the nearest available delivery rider with optimized multi-drop routes.' },
+      { title: 'One-Tap Instant UPI & Card Payments', desc: 'Seamless payments via UPI, Apple Pay, Google Pay, Razorpay, and BreakZoo Wallet.' },
+      { title: 'Loyalty Rewards & Smart Promo Engine', desc: 'Gamified streak badges, cashback points, free delivery passes, and dynamic merchant coupons.' },
+      { title: 'Contactless Delivery & In-App Calling', desc: 'Masked VoIP calling, real-time customer-driver messaging, and doorstep photo verification.' },
+      { title: 'Restaurant Partner Analytics Console', desc: 'Live sales telemetry, dish popularity heatmaps, kitchen prep metrics, and automated daily payouts.' }
     ],
     userJourney: [
-      { step: '1', title: 'Wellness Assessment', desc: 'User completes a 3-step quiz to identify sleep, anxiety, or focus priorities.' },
-      { step: '2', title: 'Trial Activation', desc: 'Instant 7-day all-access trial without upfront lock-in friction.' },
-      { step: '3', title: 'Daily Practice', desc: 'Guided audio sessions accompanied by ambient soundscapes and streak counters.' },
-      { step: '4', title: 'Live Community Sessions', desc: 'Weekly interactive live Zoom meditation circles with certified coaches.' }
+      { step: '1', title: 'Explore & Customize', desc: 'User browses nearby restaurants, applies dietary filters, and customizes toppings and spice levels.' },
+      { step: '2', title: 'Instant One-Tap Checkout', desc: 'User applies break coupons, chooses instant or scheduled break delivery, and pays via UPI.' },
+      { step: '3', title: 'Kitchen Prep & Smart Dispatch', desc: 'Restaurant accepts order on KDS while nearest rider is dispatched to kitchen.' },
+      { step: '4', title: 'Live Track & Hot Handover', desc: 'Customer tracks rider on live interactive map until contactless doorstep handover.' }
     ],
-    technologies: ['React Native', 'Django', 'PostgreSQL', 'Razorpay', 'Zoom SDK', 'Redis', 'AWS CloudFront'],
+    technologies: ['React Native', 'React', 'Node.js', 'PostgreSQL', 'Redis', 'WebSockets', 'Google Maps Platform', 'AWS', 'Docker'],
     architecture: {
-      type: 'Scalable Media Delivery & Subscription Webhook Pipeline',
+      type: 'High-Concurrency Event-Driven Food Dispatch Engine',
       highlights: [
-        'Global CDN caching via AWS CloudFront for jitter-free multi-region audio playback',
-        'Idempotent subscription webhooks handling retries and automated grace periods',
-        'Low-latency JWT token authentication with biometric sign-in support',
-        'End-to-end encrypted user progress telemetry for tailored content recommendations'
+        'Redis Pub/Sub & WebSockets broadcasting sub-100ms live rider location telemetry',
+        'PostGIS spatial queries for sub-second restaurant radius searches and geofencing',
+        'Idempotent distributed order queue with transaction locks preventing duplicate orders',
+        'High-availability containerized microservices deployed on AWS with auto-scaling'
       ]
     },
     adminFeatures: [
-      'Content Catalog & Media Asset Management',
-      'Subscription Churn & Revenue Analytics',
-      'Live Masterclass Scheduler & Attendance Monitors',
-      'Direct Push Campaign Orchestrator'
+      'Live City Dispatch & Active Rider Fleet Heatmaps',
+      'Merchant Onboarding, Menu Approval & Commission Controls',
+      'Automated Multi-Tier Payouts & Daily Settlement Engine',
+      'Customer Support Suite with Live Chat & Instant Refund Routing'
     ]
   },
   {
@@ -232,61 +174,101 @@ export const projects = [
     ]
   },
   {
-    id: 'company-management-system',
-    slug: 'company-management-system',
-    title: 'Company Management System',
+    id: 'vikas-erp',
+    slug: 'vikas-erp',
+    title: 'Vikas ERP',
     category: 'Enterprise',
     filterCategory: 'Enterprise',
-    badge: 'Enterprise SaaS & ERP',
-    tagline: 'Unified Workforce, Project Governance & Operational Intelligence Suite',
-    description: 'An all-in-one enterprise governance platform orchestrating employee lifecycles, tech lead workflows, milestone tracking, work logs, and performance metrics.',
-    summary: 'Designed for high-growth tech firms, this ERP platform provides granular visibility into engineering bandwidth, project profitability, timesheet governance, and resource allocation.',
-    client: 'Nexus Global Enterprises',
-    timeline: '9 Months',
-    servicesProvided: ['Enterprise System Architecture', 'Role-Based Dashboard', 'Workflow Automation', 'Cloud Security'],
-    heroImageColor: 'linear-gradient(135deg, #1E293B 0%, #0F172A 50%, #020617 100%)',
+    badge: 'School ERP & AI Assistant',
+    tagline: 'Comprehensive School Operating System for Vikas Grammar School',
+    description: 'An advanced school management portal featuring student and administrator sign-in, AI assistant integration, and ERP functionalities for operational excellence.',
+    summary: 'Built for Vikas Grammar School HS Cherial, this ERP streamlines administrative operations, enabling secure 10-digit mobile and roll number logins alongside an intuitive AI assistant.',
+    client: 'Vikas Grammar School',
+    timeline: '4 Months',
+    servicesProvided: ['ERP Development', 'AI Assistant Integration', 'Authentication Flow', 'UI/UX Modernization'],
+    heroImageColor: 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 50%, #1D4ED8 100%)',
     metrics: [
-      { label: 'Demo Project Metrics: Resource Utilization', value: '+34%' },
-      { label: 'Demo Project Metrics: Project On-Time Delivery', value: '96.2%' },
-      { label: 'Demo Project Metrics: Managed Team Size', value: '2,500+' },
-      { label: 'Demo Project Metrics: Administrative Overhead', value: '-45%' },
+      { label: 'Demo Project Metrics: Secure Logins', value: '1,500+' },
+      { label: 'Demo Project Metrics: Admin Efficiency', value: '+45%' },
+      { label: 'Demo Project Metrics: AI Queries Handled', value: '5,000+' },
+      { label: 'Demo Project Metrics: User Adoption', value: '98%' },
     ],
-    overview: 'As engineering and consulting firms scale across multiple geographies, managing tech lead allocation, project sprints, compliance logs, and employee appraisals quickly becomes unmanageable with fragmented tools.',
-    challenge: 'Eliminating data silos between project managers, HR, and executives while enforcing strict role-based data isolation across confidential client initiatives.',
-    solution: 'AIOIN built a unified enterprise portal with custom permission matrices, automated timesheet verification, interactive Gantt timelines, and real-time profitability analytics.',
+    overview: 'Vikas Grammar School required a centralized operating system to handle daily administrative tasks, provide instant assistance to headmasters, and offer frictionless logins for students and staff without needing complex passwords.',
+    challenge: 'Eliminating manual operations while providing an intuitive localized interface (English and Telugu) for users with varying technical proficiencies.',
+    solution: 'AIOIN delivered the Vikas ERP School Operating System, complete with a password-less login portal using 10-digit mobiles or roll numbers and a built-in AI assistant for administrators like Headmaster K. Rajesham.',
     features: [
-      { title: 'Complete Employee Lifecycle Hub', desc: 'Digital onboarding, role transitions, asset allocations, and exit formalities.' },
-      { title: 'Tech Lead & Squad Management', desc: 'Assign engineering leads, track sprint capacities, and prevent team burnout.' },
-      { title: 'Multi-Project Governance', desc: 'Milestone checkpoints, client deliverables, and budget burn rate tracking.' },
-      { title: 'Granular Work Logging & Approvals', desc: 'Daily task logging with automated lead approvals and idle-time detection.' },
-      { title: 'Internal Project Applications', desc: 'Employees can apply for open internal project postings matching their ambitions.' },
-      { title: 'Role-Based Access Control (RBAC)', desc: 'Strict security boundaries for Admins, Tech Leads, Developers, HR, and Clients.' },
-      { title: 'Document & Contract Vault', desc: 'Encrypted storage for NDAs, client master service agreements, and tax forms.' },
-      { title: 'Performance Review Cycles', desc: '360-degree feedback, OKR alignment, and quarterly appraisal scorecards.' },
-      { title: 'Automated Leave & Holiday Logic', desc: 'Country-specific holiday calendars, PTO accruals, and compensatory off tracking.' },
-      { title: 'Executive BI Dashboard', desc: 'Real-time forecasting of company revenue, billable vs non-billable ratios.' }
+      { title: 'Passwordless Portal Sign-In', desc: 'Secure entry using 10-digit mobile numbers or student roll numbers.' },
+      { title: 'AI Assistant Integration', desc: 'Built-in interactive AI to assist administrators with school operations.' },
+      { title: 'Bilingual Interface', desc: 'Seamlessly localized in Telugu and English for wider accessibility.' },
+      { title: 'Administrator Dashboard', desc: 'Comprehensive control center tailored for Headmaster and staff operations.' }
     ],
     userJourney: [
-      { step: '1', title: 'Sprint & Project Setup', desc: 'Tech Lead creates project milestones, assigns sprint squads, and sets deadlines.' },
-      { step: '2', title: 'Daily Engineering Log', desc: 'Engineers submit structured task updates linked directly to Jira/GitHub tickets.' },
-      { step: '3', title: 'Lead Review & Sign-Off', desc: 'Squad leads approve work hours and monitor blockers on real-time dashboards.' },
-      { step: '4', title: 'Executive Reporting', desc: 'Management generates auto-computed client invoices and margin reports.' }
+      { step: '1', title: 'Quick Login', desc: 'User enters their mobile number or roll number on the bilingual portal.' },
+      { step: '2', title: 'Dashboard Access', desc: 'Staff and students instantly access their customized operational hubs.' },
+      { step: '3', title: 'AI Assistance', desc: 'Headmaster consults the AI assistant for quick data retrievals and operational insights.' }
     ],
-    technologies: ['React', 'Django', 'PostgreSQL', 'Docker', 'Redis', 'Celery', 'AWS'],
+    technologies: ['React', 'Node.js', 'AI APIs', 'PostgreSQL', 'Tailwind CSS'],
     architecture: {
-      type: 'Modular Enterprise Multi-Tenant Monolith & Async Queues',
+      type: 'Modern React SPA with AI Middleware',
       highlights: [
-        'PostgreSQL Row-Level Security (RLS) ensuring strict cross-department data isolation',
-        'Celery background workers generating scheduled monthly enterprise reports',
-        'OAuth2 and SAML Single Sign-On (SSO) integration with Google Workspace and Okta',
-        'Audit-trailed immutable activity logging compliant with SOC-2 and ISO 27001'
+        'Secure password-less authentication flow',
+        'Responsive layout optimized for mobile and desktop screens',
+        'Integration with localized language packs (i18n)'
       ]
     },
     adminFeatures: [
-      'Master Role & Permission Matrix Editor',
-      'Global Billing Rate & Currency Management',
-      'Full Audit Trail & Security Access Logs',
-      'Automated Payroll & Utilization Data Export'
+      'AI-Powered School Operations Assistant',
+      'Student Roll Number Directory',
+      'Multilingual Content Management'
+    ]
+  },
+  {
+    id: 'ashok-pickles',
+    slug: 'ashok-pickles',
+    title: 'Ashok Pickles',
+    category: 'Web',
+    filterCategory: 'Web',
+    badge: 'E-Commerce & Retail',
+    tagline: 'Authentic Traditional Indian Pickles & Pachadi E-Commerce Platform',
+    description: 'A modern, high-performance D2C e-commerce platform for selling handcrafted authentic Andhra and Telangana traditional pickles.',
+    summary: 'Ashok Pickles brings 100% homemade, grandmother’s stone-pounded pickle recipes to a digital storefront, delivering pure wood-pressed oil delicacies to doorsteps.',
+    client: 'Ashok Pickles',
+    timeline: '3 Months',
+    servicesProvided: ['E-Commerce Web Design', 'Payment Gateway Integration', 'Inventory Management', 'SEO & Performance Optimization'],
+    heroImageColor: 'linear-gradient(135deg, #B91C1C 0%, #DC2626 50%, #EF4444 100%)',
+    metrics: [
+      { label: 'Demo Project Metrics: Page Load Time', value: '< 1.2s' },
+      { label: 'Demo Project Metrics: Monthly Orders', value: '1,200+' },
+      { label: 'Demo Project Metrics: Conversion Rate', value: '4.8%' },
+      { label: 'Demo Project Metrics: Mobile Traffic', value: '85%' },
+    ],
+    overview: 'Ashok Pickles needed a robust online presence to sell their authentic traditional Indian pickles directly to consumers across the nation, bypassing traditional retail constraints.',
+    challenge: 'Creating an appetizing, culturally resonant, yet modern digital storefront that handles high traffic during festive seasons while managing regional shipping logistics securely.',
+    solution: 'AIOIN crafted a lightning-fast React-based single-page application (SPA) featuring high-quality product galleries, smooth shopping cart experiences, and rich cultural typography.',
+    features: [
+      { title: 'Interactive Product Catalog', desc: 'Beautiful grid layout showcasing different varieties like Andhra Avakaya and Gongura Pachadi.' },
+      { title: 'Seamless Shopping Cart', desc: 'Frictionless checkout experience with localized payment options.' },
+      { title: 'Culturally Resonant Design', desc: 'Utilization of Noto Sans Telugu and warm color palettes to evoke a homemade feel.' },
+      { title: 'FSSAI Certified Badge Integration', desc: 'Building trust with clear displays of quality and health certifications.' }
+    ],
+    userJourney: [
+      { step: '1', title: 'Product Discovery', desc: 'Customer explores the visually rich catalog of traditional pickles.' },
+      { step: '2', title: 'Add to Cart', desc: 'Customer selects jar size and quantity, instantly updating the cart.' },
+      { step: '3', title: 'Secure Checkout', desc: 'User completes purchase through an integrated, secure payment gateway.' }
+    ],
+    technologies: ['React', 'Vite', 'CSS', 'JavaScript'],
+    architecture: {
+      type: 'Modern Static SPA with Headless CMS',
+      highlights: [
+        'Lightning-fast client-side rendering with Vite and React',
+        'Optimized Web Fonts (Plus Jakarta Sans & Noto Sans Telugu)',
+        'Responsive layout prioritizing mobile commerce'
+      ]
+    },
+    adminFeatures: [
+      'Order Fulfillment Dashboard',
+      'Inventory Tracking & Alerts',
+      'Sales and Revenue Analytics'
     ]
   }
 ];
